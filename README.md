@@ -6,7 +6,7 @@ PoC Implementation combining Stack Moonwalking and Memory Encryption.
 
 Moonwalk++ is a PoC implementation of an enahnced version of [StackMoonwalk](https://github.com/klezVirus/SilentMoonwalk), which combines its original technique to remove the caller from the call stack, with a memory self-encryption routine, using ROP to both desynchronize unwinding from control flow and simultaneously encrypt the executing shellcode to hide it from inpection.
 
-**Read more in the Blog Post:** [Malware Got Its Free Passes Back!](https://klezvirus.github.io/posts/Moonwalk-plus-plus/). 
+**Read more in the Blog Post:** [Malware Just Got Its Free Passes Back!](https://klezvirus.github.io/posts/Moonwalk-plus-plus/). 
 
 ## Is it Moonwalk++? (or minus minus --?)
 
@@ -36,7 +36,7 @@ The POC is expecting a PID of `OneDrive.exe` to be provided as a CLI argument. T
 
 ### OPSEC.. what?
 
-This proof of concept has minimal operational security and is intentionally rough. Its primary purpose is to substantiate the theoretical claims discussed in the blog post [Malware Got Its Free Passes Back!](https://klezvirus.github.io/posts/Moonwalk-plus-plus/). 
+This proof of concept has minimal operational security and is intentionally rough. Its primary purpose is to substantiate the theoretical claims discussed in the blog post [Malware Just Got Its Free Passes Back!](https://klezvirus.github.io/posts/Moonwalk-plus-plus/). 
 
 ## Build
 
