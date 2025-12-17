@@ -69,7 +69,7 @@ Check [SilentMoowalk#PreviousWork](https://github.com/klezVirus/SilentMoonwalk?t
 * In a similar way, the Big Stack Pivot gadget in KernelBase `ADD RSP, 0x1538`had a similar limitation. To make this more stable I updated the POC to dynamically search a general BIG pattern in multiple DLLs  and dynamically extract the size. Any size bigger than 0x500 bytes is considered fine by the POC.
 * Another bug I was notified about pertained to the `SetThreadContext` API. On certain machines, I had to use a non-volatile register to pass the references to the SPOOFER configuration while hijacking the thread context.
 
-Big thanks to [Samir Bousseaden](@SBousseaden) for notifing the issues!
+Big thanks to [Samir Bousseaden](https://x.com/SBousseaden) for notifing the issues!
 
 ## Additional Notes
 
