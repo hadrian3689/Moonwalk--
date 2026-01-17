@@ -58,6 +58,7 @@ In order to build the POC and observe a similar behaviour to the one in the pict
 * Disable Whole Program Optimisation (Remove `/GL`)
 * Disable size and speed preference (Remove `/Os`, `/Ot`)
 * **Enable** intrinsic if not enabled (`/Oi`)
+* Basically, this is how I built it on my system: `& 'C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\MSBuild.exe' /p:Configuration=Release /p:Platform=x64 /p:BufferSecurityCheck=false /p:Optimization=Disabled /p:WholeProgramOptimization=false /p:FavorSizeOrSpeed=Neither /p:IntrinsicFunctions=true`
 
 ## Previous Work and Credits
 
@@ -75,3 +76,4 @@ Big thanks to [Samir Bousseaden](https://x.com/SBousseaden) for notifing the iss
 
 * This POC was made only to support and proof the feasibility to combine Stack Moonwalk and Memory Encryption. As the previous POC (SilentMoonwalk), it is not production ready and needs a lot of testing before integrating into C2 frameworks or similar. Use at your own risk.
 * I'm not planning extensions for this technique, at least for now.
+
